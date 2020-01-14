@@ -1,0 +1,26 @@
+{
+  "name": "cool-gifs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup --config",
+    "start": "rollup --config --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OskarJoss/cool-gifs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OskarJoss/cool-gifs/issues"
+  },
+  "homepage": "https://github.com/OskarJoss/cool-gifs#readme",
+  "private": true,
+  "dependencies": {
+    "rollup": "^1.29.0",
+    "rollup-plugin-browsersync": "^1.1.0"
+  }
+}
