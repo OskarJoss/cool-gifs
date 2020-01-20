@@ -1,4 +1,7 @@
 import browsersync from "rollup-plugin-browsersync";
+import { terser } from "rollup-plugin-terser";
+const isProduction = process.env.NODE_ENV === "production";
+const isDevelopment = isProduction === false;
 
 module.exports = {
   input: "src/scripts/index.js",
@@ -6,5 +9,8 @@ module.exports = {
     file: "public/giphy.js",
     format: "iife"
   },
-  plugins: [browsersync({ server: "public" })]
+  plugins: [
+    isDevelopment && browsersync({ server: "public" }),
+    isProduction && terser()
+  ]
 };
