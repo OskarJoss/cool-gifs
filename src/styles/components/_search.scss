@@ -1,0 +1,20 @@
+.search {
+  & > * {
+    padding: 0;
+  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  &__field {
+    width: 70vw;
+    height: 50px;
+    border: 2px purple solid;
+  }
+  &__button {
+    background-color: purple;
+    height: 50px;
+    width: 50px;
+    border: 2px purple solid;
+  }
+}
