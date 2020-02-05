@@ -7,7 +7,8 @@
     "build": "rollup --config --environment NODE_ENV:production",
     "start": "rollup --config --watch",
     "test": "semistandard --verbose | snazzy",
-    "fix": "semistandard --fix | snazzy"
+    "fix": "semistandard --fix | snazzy",
+    "deploy": "npm run build && gh-pages -d public"
   },
   "repository": {
     "type": "git",
@@ -40,6 +41,7 @@
     "@babel/preset-env": "^7.8.3",
     "@rollup/plugin-commonjs": "^11.0.1",
     "@rollup/plugin-node-resolve": "^7.0.0",
+    "gh-pages": "^2.2.0",
     "postcss-normalize": "^8.0.1",
     "rollup-plugin-babel": "^4.3.3"
   },
